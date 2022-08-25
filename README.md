@@ -2,7 +2,7 @@
 
 Funcionalidade de Aprender o Basico do Flutter/Dart
 
-## Animações Vetoriais com Flare e os componentes 
+## Favoritos do Youtube (BLOC Pattern) 
 
 Com varias modificações para inclusive acessar o sistema dos correios (Frete)
 
