@@ -1,3 +1,4 @@
+import 'package:animacoesvetoriaiscomflare/delegates/data_search.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_pattern/bloc_pattern.dart';
 
@@ -17,22 +18,17 @@ class Home extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.black87,
         actions: <Widget>[
-          Align(
-            alignment: Alignment.center,
-            child: Text("0")
-          ),
-          IconButton(
-            icon: Icon(Icons.star),
-            onPressed: () {
-
-            }
-          ),
+          Align(alignment: Alignment.center, child: Text("0")),
+          IconButton(icon: Icon(Icons.star), onPressed: () {}),
           IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-
-              }
-          ),
+                showSearch(
+                  context: context,
+                  delegate: DataSearch(),
+                  query: "videos de flutter",
+                );
+              }),
         ],
       ),
       body: Container(),
